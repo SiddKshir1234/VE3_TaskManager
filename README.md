@@ -1,21 +1,97 @@
-<<<<<<< HEAD
-# VE3_TaskManager
-=======
-# Getting Started with Create React App
+# Task Manager Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Task Manager application built with Flask for the backend and React for the frontend.
 
-## Available Scripts
+## Setup Instructions
 
-In the project directory, you can run:
+### Backend (Flask)
 
-### `npm start`
+1. Clone this repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```bash
+    git clone [<repository_url>](https://github.com/SiddKshir1234/VE3_TaskManager.git)
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the `backend` directory:
+
+    ```bash
+    cd backend
+    ```
+
+3. Create a virtual environment (optional but recommended):
+
+    ```bash
+    python -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    - On Windows:
+
+        ```bash
+        venv\Scripts\activate
+        ```
+
+    - On macOS and Linux:
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+5. Install the required Python packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+6. Set up the SQLite database by running the following commands:
+
+    ```bash
+    flask db init
+    flask db migrate -m "Initial migration"
+    flask db upgrade
+    ```
+
+7. Start the Flask server:
+
+    ```bash
+    flask run
+    ```
+
+   The server should now be running on http://localhost:5000.
+
+### Frontend (React)
+
+1. Open a new terminal window/tab.
+
+2. Navigate to the `frontend` directory:
+
+    ```bash
+    cd frontend
+    ```
+
+3. Install the required Node.js packages:
+
+    ```bash
+    npm install
+    ```
+
+4. Start the React development server:
+
+    ```bash
+    npm start
+    ```
+
+   The React application should now be running on http://localhost:3000.
+
+## Connecting Backend and Frontend
+
+The frontend React application is configured to send API requests to the Flask backend running on http://localhost:5000. This configuration is already set up in the React code.
+
+## Running the Application
+
+To use the application, make sure both the Flask backend server and React frontend development server are running simultaneously. Then, open your web browser and navigate to http://localhost:3000 to access the Task Manager application.
+
 
 ### `npm test`
 
