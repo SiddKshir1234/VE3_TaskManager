@@ -1,0 +1,27 @@
+#root {
+  background-color: #ebebeb;
+  height: 1000px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar-link {
+  color: lightgray;
+  text-decoration: none;
+  font-size: large;
+  font-style: italic;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}

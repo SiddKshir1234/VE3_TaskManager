@@ -1,0 +1,26 @@
+.task-card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20;
+}
+
+.label {
+  color: red;
+  font-weight: bold;
+}
+
+.value {
+  color: #333;
+  margin-left: 10px;
+}
+
+.field {
+  display: flex;
+}
